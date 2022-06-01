@@ -1,0 +1,59 @@
+{
+  "assistant": {
+    "detail": {
+      "tabs": {
+        "title": "助手"
+      },
+      "framework": "框架",
+      "noFramework": "无框架",
+      "scrapy": "Scrapy"
+    }
+  },
+  "scrapy": {
+    "navItems": {
+      "overview": "概览",
+      "spiders": "爬虫",
+      "items": "Items",
+      "middlewares": "中间件",
+      "settings": "设置"
+    },
+    "overview": {
+      "deploy": "部署"
+    },
+    "spiders": {
+      "table": {
+        "columns": {
+          "name": "名称",
+          "type": "类别",
+          "filePath": "文件路径"
+        }
+      }
+    },
+    "items": {
+      "table": {
+        "columns": {
+          "name": "名称",
+          "fields": "字段"
+        }
+      },
+      "fieldType": "字段类别"
+    },
+    "middlewares": {
+      "table": {
+        "columns": {
+          "name": "名称",
+          "methods": "方法"
+        }
+      }
+    },
+    "settings": {
+      "table": {
+        "columns": {
+          "name": "名称",
+          "type": "类别",
+          "value": "值"
+        }
+      }
+    }
+  }
+}

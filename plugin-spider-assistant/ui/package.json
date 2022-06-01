@@ -1,0 +1,18 @@
+{
+  "name": "plugin-spider-assistant",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "element-plus": "1.0.2-beta.40",
+    "vue": "3.0.11",
+    "vue-router": "4.0.11",
+    "crawlab-ui": "0.6.0-beta.20211122.1141",
+    "vuex": "^4.0.0-0"
+  },
+  "author": "",
+  "license": "ISC"
+}

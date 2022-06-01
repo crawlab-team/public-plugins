@@ -1,0 +1,103 @@
+{
+  "ui_components": {
+    "title": {
+      "dependencies": "Dependencies"
+    }
+  },
+  "ui_sidebar_navs": {
+    "title": {
+      "dependencies": "Dependencies",
+      "python": "Python",
+      "node": "Node",
+      "settings": "Settings"
+    }
+  },
+  "components": {
+    "form": {
+      "dependencyName": "Dependency Name",
+      "mode": "Mode",
+      "allNodes": "All Nodes",
+      "selectedNodes": "Selected Nodes",
+      "selectNodes": "Select Nodes",
+      "upgrade": "Upgrade"
+    }
+  },
+  "actions": {
+    "install": "Install",
+    "installAndUpgrade": "Install and upgrade",
+    "installAndDowngrade": "Install and downgrade",
+    "uninstall": "Uninstall",
+    "updateTooltip": "Click to update dependencies"
+  },
+  "common": {
+    "searchDependencies": "Search dependencies",
+    "search": "Search",
+    "installed": "Installed",
+    "installable": "Installable",
+    "upgradable": "Upgradable",
+    "downgradable": "Downgradable"
+  },
+  "task": {
+    "tasks": "Tasks",
+    "logs": "Logs",
+    "table": {
+      "columns": {
+        "action": "Action",
+        "node": "Node",
+        "status": "Status",
+        "dependencies": "Dependencies",
+        "time": "Time"
+      }
+    }
+  },
+  "spider": {
+    "dependencyType": "Dependency Type",
+    "noDependencyType": "No Dependency Type",
+    "tooltip": {
+      "requirementsTxt": "requirements.txt identified in root folder",
+      "packageJson": "package.json identified in root folder",
+      "other": "Other"
+    },
+    "installButton": {
+      "tooltip": {
+        "requirementsTxt": "Install by requirements.txt",
+        "packageJson": "Install by package.json",
+        "other": "Other"
+      }
+    }
+  },
+  "settings": {
+    "manage": "Manage",
+    "table": {
+      "columns": {
+        "description": "Description"
+      }
+    },
+    "form": {
+      "key": "Key",
+      "name": "Name",
+      "description": "Description",
+      "command": "Command",
+      "proxy": "Proxy"
+    },
+    "description": {
+      "python": "Dependencies for Python environment",
+      "node": "Dependencies for Node.js environment"
+    }
+  },
+  "table": {
+    "columns": {
+      "name": "Name",
+      "latestVersion": "Latest Version",
+      "requiredVersion": "Required Version",
+      "installedVersion": "Installed Version",
+      "installedNodes": "Installed Nodes"
+    }
+  },
+  "message": {
+    "success": {
+      "install": "Started to install dependencies",
+      "uninstall": "Started to uninstall dependencies"
+    }
+  }
+}

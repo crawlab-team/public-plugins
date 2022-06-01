@@ -1,0 +1,103 @@
+{
+  "ui_components": {
+    "title": {
+      "dependencies": "依赖"
+    }
+  },
+  "ui_sidebar_navs": {
+    "title": {
+      "dependencies": "依赖",
+      "python": "Python",
+      "node": "Node",
+      "settings": "设置"
+    }
+  },
+  "components": {
+    "form": {
+      "dependencyName": "依赖名称",
+      "mode": "模式",
+      "allNodes": "所有节点",
+      "selectedNodes": "指定节点",
+      "selectNodes": "选择节点",
+      "upgrade": "升级"
+    }
+  },
+  "actions": {
+    "install": "安装",
+    "installAndUpgrade": "安装升级",
+    "installAndDowngrade": "安装降级",
+    "uninstall": "卸载",
+    "updateTooltip": "点击更新依赖"
+  },
+  "common": {
+    "searchDependencies": "搜索依赖",
+    "search": "搜索",
+    "installed": "已安装",
+    "installable": "可安装",
+    "upgradable": "可升级",
+    "downgradable": "可降级"
+  },
+  "task": {
+    "tasks": "任务",
+    "logs": "日志",
+    "table": {
+      "columns": {
+        "action": "操作",
+        "node": "节点",
+        "status": "状态",
+        "dependencies": "依赖",
+        "time": "时间"
+      }
+    }
+  },
+  "spider": {
+    "dependencyType": "依赖类别",
+    "noDependencyType": "无依赖类别",
+    "tooltip": {
+      "requirementsTxt": "根目录下 requirements.txt",
+      "packageJson": "根目录下 package.json",
+      "other": "其他"
+    },
+    "installButton": {
+      "tooltip": {
+        "requirementsTxt": "按照 requirements.txt 进行安装",
+        "packageJson": "按照 package.json 进行安装",
+        "other": "其他"
+      }
+    }
+  },
+  "settings": {
+    "manage": "管理",
+    "table": {
+      "columns": {
+        "description": "描述"
+      }
+    },
+    "form": {
+      "key": "键",
+      "name": "名称",
+      "description": "描述",
+      "command": "命令",
+      "proxy": "代理"
+    },
+    "description": {
+      "python": "Python 环境依赖",
+      "node": "Node.js 环境依赖"
+    }
+  },
+  "table": {
+    "columns": {
+      "name": "名称",
+      "latestVersion": "最新版本",
+      "requiredVersion": "要求版本",
+      "installedVersion": "安装版本",
+      "installedNodes": "安装节点"
+    }
+  },
+  "message": {
+    "success": {
+      "install": "开始安装依赖",
+      "uninstall": "开始卸载依赖"
+    }
+  }
+}

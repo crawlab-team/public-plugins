@@ -1,0 +1,87 @@
+{
+  "name": "dependency",
+  "full_name": "crawlab-team/plugin-dependency",
+  "description": "A plugin for managing dependencies",
+  "proto": "http",
+  "cmd": "sh ./bin/start.sh",
+  "docker_cmd": "/app/plugins/bin/plugin-dependency",
+  "endpoint": "localhost:9998",
+  "event_key": {
+    "include": "^model:",
+    "exclude": "artifact"
+  },
+  "install_url": "https://github.com/crawlab-team/plugin-dependency",
+  "deploy_mode": "all",
+  "auto_start": true,
+  "lang_url": "ui/lang",
+  "ui_components": [
+    {
+      "name": "dependency-settings",
+      "title": "Dependencies Settings",
+      "src": "ui/src/setting/DependencySettings.vue",
+      "type": "view",
+      "path": "dependencies/settings"
+    },
+    {
+      "name": "dependency-python",
+      "title": "Dependencies Python",
+      "src": "ui/src/python/DependencyPython.vue",
+      "type": "view",
+      "path": "dependencies/python"
+    },
+    {
+      "name": "dependency-node",
+      "title": "Dependencies Node",
+      "src": "ui/src/node/DependencyNode.vue",
+      "type": "view",
+      "path": "dependencies/node"
+    },
+    {
+      "name": "dependencies",
+      "title": "ui_components.title.dependencies",
+      "src": "ui/src/spider/DependencySpiderTab.vue",
+      "type": "tab",
+      "path": "dependencies",
+      "parent_paths": [
+        "/spiders/:id"
+      ]
+    }
+  ],
+  "ui_sidebar_navs": [
+    {
+      "path": "/dependencies",
+      "title": "plugins.dependency.ui_sidebar_navs.title.dependencies",
+      "icon": [
+        "fa",
+        "puzzle-piece"
+      ],
+      "children": [
+        {
+          "path": "/dependencies/python",
+          "title": "plugins.dependency.ui_sidebar_navs.title.python",
+          "icon": [
+            "fab",
+            "python"
+          ]
+        },
+        {
+          "path": "/dependencies/node",
+          "title": "plugins.dependency.ui_sidebar_navs.title.node",
+          "icon": [
+            "fab",
+            "node-js"
+          ]
+        },
+        {
+          "path": "/dependencies/settings",
+          "title": "plugins.dependency.ui_sidebar_navs.title.settings",
+          "icon": [
+            "fa",
+            "cog"
+          ]
+        }
+      ]
+    }
+  ],
+  "ui_assets": []
+}

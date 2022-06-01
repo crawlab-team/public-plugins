@@ -1,0 +1,4 @@
+.simple-mde .CodeMirror,
+.simple-mde .CodeMirror-scroll {
+    height: 100%;
+}

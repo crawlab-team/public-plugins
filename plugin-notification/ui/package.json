@@ -1,0 +1,44 @@
+{
+  "name": "crawlab-plugin-notification",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:lib",
+    "build:rollup": "rollup -c rollup.config.js",
+    "build:app": "vue-cli-service build --target app",
+    "build:lib": "vue-cli-service build --target lib",
+    "build:wc": "vue-cli-service build --target wc"
+  },
+  "dependencies": {
+    "element-plus": "1.0.2-beta.40",
+    "vue": "3.0.11",
+    "vue-router": "4.0.11",
+    "crawlab-ui": "0.6.0-beta.202109082041"
+  },
+  "author": "Marvin Zhang",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.12.7",
+    "@types/jest": "^26.0.19",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "^4.5.13",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "rollup": "^2.56.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass-loader": "^10.1.0",
+    "scss-loader": "^0.0.1",
+    "typescript": "~3.9.3"
+  }
+}

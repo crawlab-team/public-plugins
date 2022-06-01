@@ -1,0 +1,61 @@
+{
+  "ui_sidebar_navs": {
+    "title": {
+      "notifications": "Notifications"
+    }
+  },
+  "actions": {
+    "add": "Create",
+    "save": "Save",
+    "change": "Change",
+    "delete": "Delete"
+  },
+  "tabs": {
+    "overview": "Overview",
+    "triggers": "Triggers",
+    "template": "Template"
+  },
+  "list": {
+    "new": {
+      "label": "New Notification",
+      "tooltip": "Create a new notification"
+    },
+    "table": {
+      "columns": {
+        "name": "Name",
+        "type": "Type",
+        "enabled": "Enabled",
+        "description": "Description"
+      }
+    }
+  },
+  "notifications": {
+    "type": {
+      "mail": "Mail",
+      "mobile": "Mobile"
+    }
+  },
+  "form": {
+    "name": "Name",
+    "description": "Description",
+    "type": "Type",
+    "enabled": "Enabled",
+    "mail": {
+      "smtp": {
+        "server": "SMTP Server",
+        "port": "SMTP Port",
+        "user": "SMTP User",
+        "password": "SMTP Password",
+        "sender": {
+          "email": "SMTP Email",
+          "identity": "SMTP Identity"
+        }
+      },
+      "to": "To",
+      "cc": "Cc"
+    },
+    "mobile": {
+      "webhook": "Webhook"
+    }
+  }
+}

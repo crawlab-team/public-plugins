@@ -1,0 +1,59 @@
+{
+  "assistant": {
+    "detail": {
+      "tabs": {
+        "title": "Assistant"
+      },
+      "framework": "Framework",
+      "noFramework": "No Framework",
+      "scrapy": "Scrapy"
+    }
+  },
+  "scrapy": {
+    "navItems": {
+      "overview": "Overview",
+      "spiders": "Spiders",
+      "items": "Items",
+      "middlewares": "Middlewares",
+      "settings": "Settings"
+    },
+    "overview": {
+      "deploy": "Deploy"
+    },
+    "spiders": {
+      "table": {
+        "columns": {
+          "name": "Name",
+          "type": "Type",
+          "filePath": "File Path"
+        }
+      }
+    },
+    "items": {
+      "table": {
+        "columns": {
+          "name": "Name",
+          "fields": "Fields"
+        }
+      },
+      "fieldType": "Field Type"
+    },
+    "middlewares": {
+      "table": {
+        "columns": {
+          "name": "Name",
+          "methods": "Methods"
+        }
+      }
+    },
+    "settings": {
+      "table": {
+        "columns": {
+          "name": "Name",
+          "type": "Type",
+          "value": "Value"
+        }
+      }
+    }
+  }
+}

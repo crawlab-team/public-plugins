@@ -1,0 +1,57 @@
+{
+  "name": "notification",
+  "full_name": "crawlab-team/plugin-notification",
+  "description": "A plugin for handling notifications",
+  "proto": "http",
+  "cmd": "sh ./bin/start.sh",
+  "docker_cmd": "/app/plugins/bin/plugin-notification",
+  "endpoint": "localhost:39999",
+  "event_key": {
+    "include": "^model:",
+    "exclude": "artifact"
+  },
+  "install_url": "https://github.com/crawlab-team/plugin-notification",
+  "deploy_mode": "master_only",
+  "auto_start": true,
+  "lang_url": "ui/lang",
+  "ui_components": [
+    {
+      "name": "notification-list",
+      "title": "Notifications",
+      "src": "ui/src/NotificationList.vue",
+      "type": "view",
+      "path": "notifications"
+    },
+    {
+      "name": "notification-detail",
+      "title": "Notifications",
+      "src": "ui/src/NotificationDetail.vue",
+      "type": "view",
+      "path": "notifications/:id"
+    }
+  ],
+  "ui_sidebar_navs": [
+    {
+      "path": "/notifications",
+      "title": "plugins.notification.ui_sidebar_navs.title.notifications",
+      "icon": [
+        "fa",
+        "envelope"
+      ]
+    }
+  ],
+  "ui_assets": [
+    {
+      "path": "ui/public/simplemde/simplemde.js",
+      "type": "js"
+    },
+    {
+      "path": "ui/public/simplemde/simplemde.css",
+      "type": "css"
+    },
+    {
+      "path": "ui/public/css/style.css",
+      "type": "css"
+    }
+  ]
+}
