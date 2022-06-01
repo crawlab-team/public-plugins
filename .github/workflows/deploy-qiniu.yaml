@@ -25,7 +25,10 @@ jobs:
           rm -rf .npmrc
           yarn install
       - name: Publish
-        run: node scripts/publish.js
+        run: |
+          for p in `ls | grep "plugin-"`; do
+            node scripts/publish.js ${p}
+          done
         env:
           QINIU_ACCESS_KEY: ${{secrets.QINIU_ACCESS_KEY}}
           QINIU_SECRET_KEY: ${{secrets.QINIU_SECRET_KEY}}

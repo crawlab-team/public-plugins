@@ -4,7 +4,7 @@ const walkSync = require('walk-sync')
 const chalk = require('chalk')
 
 // target directory
-const targetDir = '.'
+const targetDir = `./${process.argv[2]}`
 
 // access key
 const accessKey = process.env.QINIU_ACCESS_KEY
