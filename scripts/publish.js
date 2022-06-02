@@ -2,6 +2,9 @@ const path = require('path')
 const qiniu = require('qiniu')
 const walkSync = require('walk-sync')
 const chalk = require('chalk')
+const dotenv = require('dotenv')
+
+dotenv.config()
 
 // target directory
 const targetDir = `./${process.argv[2]}`

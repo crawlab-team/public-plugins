@@ -15,6 +15,7 @@
   "homepage": "https://github.com/crawlab-team/crawlab-docs#readme",
   "devDependencies": {
     "chalk": "^4.1.2",
+    "dotenv": "^16.0.1",
     "qiniu": "^7.4.0",
     "walk-sync": "^3.0.0"
   }
