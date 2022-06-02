@@ -22,7 +22,7 @@ jobs:
       - name: Install
         run: |
           npm install -g yarn
-          rm -rf .npmrc
+          rm -rf .npmrc yarn.lock | true
           yarn install
       - name: Publish
         run: |

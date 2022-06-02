@@ -26,6 +26,8 @@ function uploadFile(localFile, key) {
   const options = {
     scope: `${bucket}:${key}`,
   }
+  console.debug(localFile, key, options);
+  return;
 
   // mac
   const mac = new qiniu.auth.digest.Mac(accessKey, secretKey)
@@ -69,9 +71,8 @@ async function main() {
   // iterate paths
   for (const filePath of paths) {
     const localFile = path.resolve(filePath)
-    const key = filePath.replace(targetDir + '/', '')
     try {
-      await uploadFile(localFile, key)
+      await uploadFile(localFile, filePath)
     } finally {
       // do nothing
     }
