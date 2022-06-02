@@ -1,5 +1,6 @@
 {
   "name": "dependency",
+  "short_name": "plugin-dependency",
   "full_name": "crawlab-team/plugin-dependency",
   "description": "A plugin for managing dependencies",
   "proto": "http",

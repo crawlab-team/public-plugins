@@ -1,5 +1,6 @@
 {
   "name": "notification",
+  "short_name": "plugin-notification",
   "full_name": "crawlab-team/plugin-notification",
   "description": "A plugin for handling notifications",
   "proto": "http",
