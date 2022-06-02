@@ -26,8 +26,6 @@ function uploadFile(localFile, key) {
   const options = {
     scope: `${bucket}:${key}`,
   }
-  console.debug(localFile, key, options);
-  return;
 
   // mac
   const mac = new qiniu.auth.digest.Mac(accessKey, secretKey)
