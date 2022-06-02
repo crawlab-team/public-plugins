@@ -26,6 +26,10 @@ jobs:
           yarn install
       - name: Publish
         run: |
+          # update and upload plugins.json
+          node scripts/getPlugins.js
+
+          # upload plugins
           for p in `ls | grep "plugin-"`; do
             node scripts/publish.js ${p}
           done
