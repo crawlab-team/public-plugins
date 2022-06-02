@@ -7,7 +7,7 @@ const dotenv = require('dotenv')
 dotenv.config()
 
 // target directory
-const targetDir = `./${process.argv[2]}`
+const targetDir = `${process.argv[2]}`
 
 // access key
 const accessKey = process.env.QINIU_ACCESS_KEY
