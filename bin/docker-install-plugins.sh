@@ -25,9 +25,13 @@ function install_plugin() {
 }
 
 mkdir -p /app/plugins
-echo `ls -l /app/plugins`
 
 for name in `ls | grep plugin-`; do
   cp -r $name /app/plugins/
+done
+
+ls -l /app/plugins
+
+for name in `ls | grep plugin-`; do
   install_plugin "$name"
 done
