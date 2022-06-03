@@ -22,14 +22,14 @@ function install_plugin() {
   # copy dir
   cp -rf $name "${plugins_root_path}/"
 
-  # list
-  ls "${plugin_path}"
-
   # build
   cd "$plugin_path" && go build -o "${bin_path}/${name}"
 
   # ensure executable
   chmod +x "${bin_path}/${name}"
+
+  # echo
+  ls -l "${plugins_root_path}"
 }
 
 for name in `ls | grep plugin-`; do
