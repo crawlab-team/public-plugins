@@ -12,9 +12,10 @@ function install_plugin() {
   # plugin name
   local name=$1
   local url="https://github.com/crawlab-team/${name}"
-  local repo_path=""/app/plugins/${name}
-  git clone "$url" "$repo_path"
-  cd "$repo_path" && go build -o "${bin_path}/${name}"
+  local plugins_root_path="/app/plugins"
+  local plugin_path="${plugins_root_path}/${name}"
+  cp -rf $name $plugin_path
+  cd "$plugin_path" && go build -o "${bin_path}/${name}"
   chmod +x "${bin_path}/${name}"
 }
 
