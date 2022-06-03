@@ -9,13 +9,26 @@ function install_plugin() {
     mkdir -p "$bin_path"
   fi
 
-  # plugin name
+  # variables
   local name=$1
-  local url="https://github.com/crawlab-team/${name}"
   local plugins_root_path="/app/plugins"
   local plugin_path="${plugins_root_path}/${name}"
-  cp -rf $name $plugin_path
+
+  # echo variables
+  echo "name=$name"
+  echo "plugins_root_path=$plugins_root_path"
+  echo "plugin_path=$plugin_path"
+
+  # copy dir
+  cp -rf $name "${plugins_root_path}/"
+
+  # list
+  ls "${plugin_path}"
+
+  # build
   cd "$plugin_path" && go build -o "${bin_path}/${name}"
+
+  # ensure executable
   chmod +x "${bin_path}/${name}"
 }
 
