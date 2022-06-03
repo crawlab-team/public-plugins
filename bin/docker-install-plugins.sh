@@ -11,27 +11,23 @@ function install_plugin() {
 
   # variables
   local name=$1
-  local plugins_root_path="/app/plugins"
-  local plugin_path="${plugins_root_path}/${name}"
+  local plugin_path="/app/plugins/${name}"
 
   # echo variables
   echo "name=$name"
-  echo "plugins_root_path=$plugins_root_path"
   echo "plugin_path=$plugin_path"
-
-  # copy dir
-  cp -rf $name "${plugins_root_path}/"
 
   # build
   cd "$plugin_path" && go build -o "${bin_path}/${name}"
 
   # ensure executable
   chmod +x "${bin_path}/${name}"
-
-  # echo
-  ls -l "${plugins_root_path}"
 }
 
+mkdir -p /app/plugins
+ls -l /app/plugins
+
 for name in `ls | grep plugin-`; do
+  cp -r $name /app/plugins/
   install_plugin "$name"
 done
