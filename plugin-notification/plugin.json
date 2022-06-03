@@ -6,6 +6,7 @@
   "proto": "http",
   "cmd": "sh ./bin/start.sh",
   "docker_cmd": "/app/plugins/bin/plugin-notification",
+  "docker_dir": "/app/plugins/plugin-notification",
   "endpoint": "localhost:39999",
   "event_key": {
     "include": "^model:",

@@ -6,6 +6,7 @@
   "proto": "http",
   "cmd": "sh ./bin/start.sh",
   "docker_cmd": "/app/plugins/bin/plugin-spider-assistant",
+  "docker_dir": "/app/plugins/plugin-spider-assistant",
   "endpoint": "localhost:9997",
   "event_key": {
     "include": "^model:",

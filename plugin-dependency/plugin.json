@@ -6,6 +6,7 @@
   "proto": "http",
   "cmd": "sh ./bin/start.sh",
   "docker_cmd": "/app/plugins/bin/plugin-dependency",
+  "docker_dir": "/app/plugins/plugin-dependency",
   "endpoint": "localhost:9998",
   "event_key": {
     "include": "^model:",
