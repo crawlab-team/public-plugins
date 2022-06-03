@@ -37,3 +37,4 @@ jobs:
           IMAGE_NAME=${{ env.IMAGE_NAME }}
           docker tag image $IMAGE_NAME:$IMAGE_VERSION
           docker push $IMAGE_NAME:$IMAGE_VERSION
+
