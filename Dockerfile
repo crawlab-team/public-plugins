@@ -1,4 +1,4 @@
-FROM go:1.16
+FROM golang:1.16
 
 # add files
 COPY ./bin /app/bin
